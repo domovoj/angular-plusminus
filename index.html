@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+    <script src="bower_components/angularjs/angular.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/plusminus/plusminus.jquery.js"></script>
+    <script src="anuglar-plusminus.js"></script>
+</head>
+<body ng-app="demo">
+<form class="form-inline" role="form" style="padding: 20px" ng-controller="demo">
+    <div plus-minus plus-minus-config="options"></div>
+</form>
+<script>
+    angular.module("demo", ['ngPlusMinus'])
+            .controller('demo', function ($scope) {
+                $scope.options = {
+                    max: 5,
+                    template: '<button type="button" class="btn btn-primary btn-sm">-</button> ' +
+                    '<input type="text" class="plusMinus form-control input-sm"> ' +
+                    '<button type="button" class="btn btn-primary btn-sm">+</button>'
+                }
+            });
+</script>
+</body>
+</html>

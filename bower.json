@@ -1,0 +1,25 @@
+{
+  "name": "angular-plusminus",
+  "main": "angular-plusminus.js",
+  "version": "0.0.1",
+  "homepage": "http://levantovych.pro100host.com/plugins/plusminus/",
+  "authors": [
+    "yuraL_webcodium <yura.l@webcodium.com>"
+  ],
+  "description": "Plugin for replace standart input type number",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "demo",
+    "build"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "angularjs": "~1.2.23",
+    "bootstrap": "~3.3.4"
+  }
+}
