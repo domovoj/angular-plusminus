@@ -14,7 +14,6 @@
     "bower_components",
     "test",
     "tests",
-    "demo",
     "build"
   ],
   "dependencies": {
