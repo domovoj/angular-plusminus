@@ -13,17 +13,17 @@
 </head>
 <body ng-app="demo">
 <form class="form-inline" role="form" style="padding: 20px" ng-controller="demo">
-    <div plus-minus plus-minus-config="options"></div>
+    <div plus-minus plus-minus-config="options" plus-minus-template="template"></div>
 </form>
 <script>
     angular.module("demo", ['ngPlusMinus'])
             .controller('demo', function ($scope) {
                 $scope.options = {
-                    max: 5,
-                    template: '<button type="button" class="btn btn-primary btn-sm">-</button> ' +
-                    '<input type="text" class="plusMinus form-control input-sm"> ' +
-                    '<button type="button" class="btn btn-primary btn-sm">+</button>'
-                }
+                    max: 5
+                };
+                $scope.template = '<button type="button" class="btn btn-primary btn-sm">-</button> ' +
+                '<input type="text" class="plusMinus form-control input-sm"> ' +
+                '<button type="button" class="btn btn-primary btn-sm">+</button>';
             });
 </script>
 </body>
