@@ -1,6 +1,6 @@
 (function () {
-    angular.module("ngPlusMinus", [])
-        .directive("plusMinus", ['$compile', function ($compile) {
+    angular.module('ngPlusMinus', [])
+        .directive('plusMinus', ['$compile', function ($compile) {
             return {
                 restrict: 'AE',
                 scope: {
